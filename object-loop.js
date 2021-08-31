@@ -68,7 +68,7 @@ const entries = Object.entries(instructorData);
 console.log(entries); 
 
 
-// const [name, hometown] = ['Emily','New-York'];
+// example >>> const [name, hometown] = ['Emily','New-York'];
 
 for(const [key, value] of Object.entries(instructorData))
 {

@@ -50,4 +50,4 @@ function Meals(names,price)
 const meal = new Meals('Pizza','$350')
 console.log(meal);
 
-//Tutorial(5) = 35Mins
+//Tutorial(1) = 35Mins

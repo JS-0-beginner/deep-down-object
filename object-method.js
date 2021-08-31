@@ -19,6 +19,7 @@ const book =
     
     price: 2500,
     
+    //Method Property
     buy: function (discount) 
     {
         this.price = this.price - discount;

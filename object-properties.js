@@ -26,7 +26,7 @@ console.log(keyValuePairs);
 //////////// (2)Object-keys ////////////
 const propertyNames = Object.keys(book);
 console.log(propertyNames);
-//***Object properties are called keys
+//***Object properties are called keys, keys will show all the object properties in an array
 
 
 //////////// (3)Object-values ////////////

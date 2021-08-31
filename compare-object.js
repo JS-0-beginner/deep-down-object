@@ -2,9 +2,9 @@
 
 //Referencial Memory Address
 /* 
-const first = {a: 1};
-const second = {a: 1}; 
-const third = first;
+const first = {a: 1}; //individually assigned
+const second = {a: 1}; //individually assigned
+const third = first; //copied same memory address
 
 // if(first==second)
 // if(first==third)
@@ -60,4 +60,4 @@ function compareObjs(obj1, obj2)
 const result = compareObjs(first, second);
 console.log(result);
 
-//Tutorial(3) = 50mins
+//Tutorial(5) = 50mins
