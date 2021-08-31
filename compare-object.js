@@ -60,4 +60,4 @@ function compareObjs(obj1, obj2)
 const result = compareObjs(first, second);
 console.log(result);
 
-//Tutorial(4) = 50mins
+//Tutorial(3) = 50mins

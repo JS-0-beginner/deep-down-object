@@ -1,4 +1,4 @@
-/////////////// node object-binding.js ///////////////
+//// node bind-call-apply.js ////
 
 /////////////// book(1) ///////////////
 const firstBook =
@@ -19,9 +19,10 @@ const firstBook =
     
     price: 2500,
     
-    buy: function (discount) 
+    buy: function (discount,deliveryCharge,only) 
     {
-        this.price = this.price - discount;
+        const cuttingPrice = discount + deliveryCharge;
+        this.price = this.price - cuttingPrice + only;
         console.log('All-Books',this); //Bind Method from this
         return this.price;
     }
@@ -59,22 +60,24 @@ const thirdBook =
    
 }
 
+//Call
 /* 
-firstBook.buy(200);
-firstBook.buy(350);
-*/
-firstBook.buy(500); 
+firstBook.buy.call(firstBook, 500, 50, ' $ Only');
+firstBook.buy.call(secondBook, 500, 70, ' $ Only');
+firstBook.buy.call(thirdBook, 500, 60, ' $ Only');
+ */
 
+//Apply
 
-const buySecond = firstBook.buy.bind(secondBook);
+firstBook.buy.apply(firstBook, [500, 50, ' $ Only']);
+firstBook.buy.apply(secondBook, [1500, 50, ' $ Only']);
+firstBook.buy.apply(thirdBook, [500, 50, ' $ Only']);
+
+///*** Interview Q/A
 /* 
-buySecond(300);
-buySecond(700); 
+Major work of bind-call-apply 
 */
-buySecond(700);
 
-const buyThird = firstBook.buy.bind(thirdBook);
+//Tutorial(7) = 25Mins
 
-buyThird(250);
 
-//Tutorial(6) = 35Mins
