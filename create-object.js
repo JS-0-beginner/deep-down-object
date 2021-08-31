@@ -4,9 +4,9 @@
 
 const fullName = 
 {
-    title: "Mr",
-    first: "Theodor",
-    last: "Borsheim"
+    title   :  "Mr",
+    first   :  "Theodor",
+    last    :  "Borsheim"
 }
 
 console.log(fullName);
