@@ -60,6 +60,4 @@ function compareObjs(obj1, obj2)
 const result = compareObjs(first, second);
 console.log(result);
 
-//***So we can't compare objects directly with primitive type data
-
-//***If both data looking same but declared individually then are not same
+//Tutorial(4) = 50mins
