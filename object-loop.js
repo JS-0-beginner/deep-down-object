@@ -95,3 +95,5 @@ for(const [key, value] in Object.entries(instructorData))
 //***So [for in] can loop through only object's properties
 
 //***But {for of} can loop throught both properties and values of object
+
+//Tutorial(4) = 60mins
